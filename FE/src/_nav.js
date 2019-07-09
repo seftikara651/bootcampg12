@@ -15,5 +15,25 @@ export default {
       url: '/fraud-list',
       icon: 'icon-list',
     },
+    {
+      name: 'Karyawan List',
+      url: '/karyawan-list',
+      icon: 'icon-list',
+    },
+    {
+      name: 'Input Karyawan',
+      url: '/InputKaryawan',
+      icon: 'icon-list',
+    },
+    {
+      name: 'List Karyawan',
+      url: '/list-karyawan',
+      icon: 'icon-list',
+    },
+    {
+      name: 'Add Karyawan',
+      url: '/AddKaryawan',
+      icon: 'icon-list',
+    },
   ],
 };
