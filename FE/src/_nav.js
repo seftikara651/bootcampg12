@@ -15,5 +15,10 @@ export default {
       url: '/fraud-list',
       icon: 'icon-list',
     },
+    {
+      name: 'Karyawan List',
+      url: '/karyawan-list',
+      icon: 'icon-list',
+    }
   ],
 };
