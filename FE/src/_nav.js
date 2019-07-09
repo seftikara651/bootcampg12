@@ -15,5 +15,10 @@ export default {
       url: '/fraud-list',
       icon: 'icon-list',
     },
+    {
+      name: 'Input Karyawan',
+      url: '/InputKaryawan',
+      icon: 'icon-list',
+    },
   ],
 };
