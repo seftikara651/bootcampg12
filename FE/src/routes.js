@@ -39,7 +39,7 @@ const User = React.lazy(() => import('./views/Users/User'));
 const FraudReportForm = React.lazy(() => import('./views/FraudReportForm/FraudReportForm'));
 const FraudList = React.lazy(() => import('./views/FraudList/FraudList'));
 const ListKaryawan = React.lazy(() => import('./views/ListKaryawan/ListKaryawan'));
-const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/inputkaryawan'));
+const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/InputKaryawan'));
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
