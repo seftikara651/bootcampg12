@@ -8,6 +8,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * 
+ * EmployeeModel<br>
+ * EmployeeModel (Karyawan) is a Class that represents Entity (Karyawan) in the Database
+ * 
+ * @author msams
+ *
+ */
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
