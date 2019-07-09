@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.dto.model;
 
 
 import javax.persistence.Column;
@@ -18,18 +18,24 @@ import lombok.Setter;
 @NoArgsConstructor
 @Data
 @Entity(name="penempatan")
-public class PlacementModel {
+public class SalaryPercentageModel {
 
 
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 @Id
-@Column (name="ID_PENEMPATAN")
-  private long idPlacement;
+@Column (name="ID_PRESENTASE_GAJI")
+  private long idSalaryPercentage;
 
-@Column (name="KOTA_PENEMPATAN")
-  private String cityPlacement;
+@Column (name="ID_TINGKATAN")
+  private long idLevel;
 
-@Column (name="UMK_PENEMPATAN")
-private String minSalaryPlacement;
+@Column (name="ID_POSISI")
+private long idPosition;
+
+@Column (name="BESARAN_GAJI")
+private long salaryAmount;
+
+@Column (name="MASA_KERJA")
+private long workPeriod;
 
 }
