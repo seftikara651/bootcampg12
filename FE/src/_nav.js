@@ -20,10 +20,5 @@ export default {
       url: '/InputKaryawan',
       icon: 'icon-list',
     },
-    {
-      name: 'input karyawan',
-      url: '/inputkaryawan',
-      icon: 'icon-people',
-    }
   ],
 };
