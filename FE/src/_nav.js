@@ -16,6 +16,11 @@ export default {
       icon: 'icon-list',
     },
     {
+      name: 'Karyawan List',
+      url: '/karyawan-list',
+      icon: 'icon-list',
+    },
+    {
       name: 'Input Karyawan',
       url: '/InputKaryawan',
       icon: 'icon-list',
