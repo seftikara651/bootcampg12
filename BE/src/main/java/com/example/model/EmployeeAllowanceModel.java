@@ -24,7 +24,6 @@ public class EmployeeAllowanceModel{
 	private double allowanceAmount;
 
 	public void update(EmployeeAllowanceModel newTunjangan_pegawaiModel){
-		this.employeeAllowanceId=newTunjangan_pegawaiModel.employeeAllowanceId;
 		this.positionId=newTunjangan_pegawaiModel.positionId;
 		this.levelId=newTunjangan_pegawaiModel.levelId;
 		this.allowanceAmount=newTunjangan_pegawaiModel.allowanceAmount;
