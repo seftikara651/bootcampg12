@@ -24,7 +24,6 @@ public class UsersModel{
 	private int isActive;
 
 	public void update(UsersModel newUsersModel){
-		this.userId=newUsersModel.userId;
 		this.userName=newUsersModel.userName;
 		this.password=newUsersModel.password;
 		this.isActive=newUsersModel.isActive;
