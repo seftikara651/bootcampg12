@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "kemampuan")
+//Bayu
 public class AbilityModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
