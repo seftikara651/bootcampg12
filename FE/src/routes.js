@@ -39,6 +39,8 @@ const User = React.lazy(() => import('./views/Users/User'));
 const FraudReportForm = React.lazy(() => import('./views/FraudReportForm/FraudReportForm'));
 const FraudList = React.lazy(() => import('./views/FraudList/FraudList'));
 const ListKaryawan = React.lazy(() => import('./views/ListKaryawan/ListKaryawan'));
+const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/inputkaryawan'));
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
@@ -86,6 +88,7 @@ const routes = [
   { path: '/fraud-report', name: 'Fraud Report', component: FraudReportForm },
   { path: '/fraud-list', name: 'Fraud List', component: FraudList },
   { path: '/list-karyawan', name: 'List Karyawan', component: ListKaryawan },
+  { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
 ];
 
 export default routes;
