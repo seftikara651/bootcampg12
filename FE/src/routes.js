@@ -40,7 +40,7 @@ const FraudReportForm = React.lazy(() => import('./views/FraudReportForm/FraudRe
 const FraudList = React.lazy(() => import('./views/FraudList/FraudList'));
 const KaryawanList = React.lazy(() => import('./views/KaryawanList/KaryawanList'));
 const ListKaryawan = React.lazy(() => import('./views/ListKaryawan/ListKaryawan'));
-const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/InputKaryawan'));
+const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/inputkaryawan'));
 const AddKaryawan = React.lazy(() => import('./views/InputKaryawan/AddKaryawan'));
 
 
