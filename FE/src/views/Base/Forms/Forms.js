@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Badge,
   Button,
+  ButtonDropdown,
   Card,
   CardBody,
   CardFooter,
@@ -19,7 +20,6 @@ import {
   Input,
   InputGroup,
   InputGroupAddon,
-  InputGroupButtonDropdown,
   InputGroupText,
   Label,
   Row,
@@ -739,20 +739,21 @@ class Forms extends Component {
                   <FormGroup row>
                     <Col md="12">
                       <InputGroup>
-                        <InputGroupButtonDropdown addonType="prepend"
-                                                  isOpen={this.state.first}
-                                                  toggle={() => { this.setState({ first: !this.state.first }); }}>
-                          <DropdownToggle caret color="primary">
-                            Dropdown
-                          </DropdownToggle>
-                          <DropdownMenu className={this.state.first ? 'show' : ''}>
-                            <DropdownItem>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem>Something else here</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Separated link</DropdownItem>
-                          </DropdownMenu>
-                        </InputGroupButtonDropdown>
+                        <InputGroupAddon addonType="prepend">
+                          <ButtonDropdown isOpen={this.state.first}
+                                          toggle={() => { this.setState({ first: !this.state.first }); }}>
+                            <DropdownToggle caret color="primary">
+                              Dropdown
+                            </DropdownToggle>
+                            <DropdownMenu className={this.state.first ? 'show' : ''}>
+                              <DropdownItem>Action</DropdownItem>
+                              <DropdownItem>Another Action</DropdownItem>
+                              <DropdownItem>Something else here</DropdownItem>
+                              <DropdownItem divider />
+                              <DropdownItem>Separated link</DropdownItem>
+                            </DropdownMenu>
+                          </ButtonDropdown>
+                        </InputGroupAddon>
                         <Input type="text" id="input1-group3" name="input1-group3" placeholder="Username" />
                       </InputGroup>
                     </Col>
@@ -761,54 +762,57 @@ class Forms extends Component {
                     <Col md="12">
                       <InputGroup>
                         <Input type="email" id="input2-group3" name="input2-group3" placeholder="Email" />
-                        <InputGroupButtonDropdown addonType="append"
-                                                  isOpen={this.state.second}
-                                                  toggle={() => { this.setState({ second: !this.state.second }); }}>
-                          <DropdownToggle caret color="primary">
-                            Dropdown
-                          </DropdownToggle>
-                          <DropdownMenu className={this.state.second ? 'show' : ''}>
-                            <DropdownItem>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem>Something else here</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Separated link</DropdownItem>
-                          </DropdownMenu>
-                        </InputGroupButtonDropdown>
+                        <InputGroupAddon addonType="append">
+                          <ButtonDropdown isOpen={this.state.second}
+                                          toggle={() => { this.setState({ second: !this.state.second }); }}>
+                            <DropdownToggle caret color="primary">
+                              Dropdown
+                            </DropdownToggle>
+                            <DropdownMenu className={this.state.second ? 'show' : ''}>
+                              <DropdownItem>Action</DropdownItem>
+                              <DropdownItem>Another Action</DropdownItem>
+                              <DropdownItem>Something else here</DropdownItem>
+                              <DropdownItem divider />
+                              <DropdownItem>Separated link</DropdownItem>
+                            </DropdownMenu>
+                          </ButtonDropdown>
+                        </InputGroupAddon>
                       </InputGroup>
                     </Col>
                   </FormGroup>
                   <FormGroup row>
                     <Col md="12">
                       <InputGroup>
-                        <InputGroupButtonDropdown
-                          addonType="prepend"
-                          isOpen={this.state.third}
-                          toggle={() => { this.setState({ third: !this.state.third }); }}>
-                          <DropdownToggle caret color="primary">Action</DropdownToggle>
-                          <DropdownMenu className={this.state.third ? 'show' : ''}>
-                            <DropdownItem>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem>Something else here</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Separated link</DropdownItem>
-                          </DropdownMenu>
-                        </InputGroupButtonDropdown>
+                        <InputGroupAddon addonType="prepend">
+                          <ButtonDropdown isOpen={this.state.third}
+                                          toggle={() => { this.setState({ third: !this.state.third }); }}>
+                            {/*<Button id="caret" color="primary">Action</Button>*/}
+                            <DropdownToggle caret color="primary">Action</DropdownToggle>
+                            <DropdownMenu className={this.state.third ? 'show' : ''}>
+                              <DropdownItem>Action</DropdownItem>
+                              <DropdownItem>Another Action</DropdownItem>
+                              <DropdownItem>Something else here</DropdownItem>
+                              <DropdownItem divider />
+                              <DropdownItem>Separated link</DropdownItem>
+                            </DropdownMenu>
+                          </ButtonDropdown>
+                        </InputGroupAddon>
                         <Input type="text" id="input3-group3" name="input3-group3" placeholder=".." />
-                        <InputGroupButtonDropdown  addonType="append"
-                                                   isOpen={this.state.fourth}
-                                                   toggle={() => { this.setState({ fourth: !this.state.fourth }); }}>
-                          <DropdownToggle caret color="primary">
-                            Dropdown
-                          </DropdownToggle>
-                          <DropdownMenu className={this.state.fourth ? 'show' : ''}>
-                            <DropdownItem>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem>Something else here</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Separated link</DropdownItem>
-                          </DropdownMenu>
-                        </InputGroupButtonDropdown>
+                        <InputGroupAddon addonType="append">
+                          <ButtonDropdown isOpen={this.state.fourth}
+                                          toggle={() => { this.setState({ fourth: !this.state.fourth }); }}>
+                            <DropdownToggle caret color="primary">
+                              Dropdown
+                            </DropdownToggle>
+                            <DropdownMenu className={this.state.fourth ? 'show' : ''}>
+                              <DropdownItem>Action</DropdownItem>
+                              <DropdownItem>Another Action</DropdownItem>
+                              <DropdownItem>Something else here</DropdownItem>
+                              <DropdownItem divider />
+                              <DropdownItem>Separated link</DropdownItem>
+                            </DropdownMenu>
+                          </ButtonDropdown>
+                        </InputGroupAddon>
                       </InputGroup>
                     </Col>
                   </FormGroup>

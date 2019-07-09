@@ -1,13 +1,5 @@
 import React from 'react';
-import bikintabel from './views/Base/Latihan/bikintabel';
-import formInput from './views/Base/Latihan/formInput';
-import inputDirector from './views/Base/Latihan/inputDirector';
-import EmployeeInput from './views/Employee/EmployeeInput';
-import EmployeeList from './views/Employee/EmployeeList';
-import NestedJSON from './views/Employee/NestedJSON';
-import EmployeeFilter from './views/Employee/EmployeeFilter';
-// import Products from './views/Employee/Products';
-// import formContainer from './views/Base/Latihan/formContainer';
+import DefaultLayout from './containers/DefaultLayout';
 
 const Breadcrumbs = React.lazy(() => import('./views/Base/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/Base/Cards'));
@@ -44,10 +36,12 @@ const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
+const FraudReportForm = React.lazy(() => import('./views/FraudReportForm/FraudReportForm'));
+const FraudList = React.lazy(() => import('./views/FraudList/FraudList'));
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
+  { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
@@ -88,16 +82,8 @@ const routes = [
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
-  { path: '/latihan/bikintabel', exact: true, name: 'Latihan', component: bikintabel },
-  { path: '/latihan/formInput', exact: true, name:'FormInput', component: formInput},
-  { path: '/latihan/inputDirector', exact: true, name:'InputDirector', component: inputDirector},
-  // { path: '/Employee', exact: true, name:'Employee', component: Employee},
-  { path: '/Employee/EmployeeInput', name:'EmployeeInput', component: EmployeeInput},
-  { path: '/Employee/EmployeeList', name:'EmployeeList', component: EmployeeList},
-  { path: '/Employee/NestedJSON', name:'NestedJSON', component: NestedJSON},
-  // {path: '/latihan/formContainer', exact: true, name:'FormContainer', component: formContainer},
-  { path: '/Employee/EmployeeFilter', name: 'EmployeeFilter', component: EmployeeFilter},
-  // { path: '/Employee/Products', name: 'Products', component: Products},
+  { path: '/fraud-report', name: 'Fraud Report', component: FraudReportForm },
+  { path: '/fraud-list', name: 'Fraud List', component: FraudList },
 ];
 
 export default routes;
