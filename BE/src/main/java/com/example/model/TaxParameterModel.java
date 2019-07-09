@@ -70,5 +70,5 @@ public class TaxParameterModel {
 	  @Column(name="IURAN_PENSIUN")
 	  private double pensionContributions;
 	  
-	
+	//asdasd
 }
