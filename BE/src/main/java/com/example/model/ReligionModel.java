@@ -20,7 +20,6 @@ public class ReligionModel{
 	private String religionName;
 
 	public void update(ReligionModel newReligionModel){
-		this.religionId=newReligionModel.religionId;
 		this.religionName=newReligionModel.religionName;
 	}
 }
